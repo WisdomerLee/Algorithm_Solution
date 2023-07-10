@@ -1,0 +1,19 @@
+우선순위 큐 Priority Queue (Heap)
+삽입, 삭제 : O(logN)
+
+내부적으로 이진트리 heap의 형태로 구현되어 있음
+root node를 기준으로 넣고 빼고 할 때 시간이 저리 걸림...?
+  
+python
+import heapq
+
+pq = []
+heapq.heappush(pq, 2)
+heapq.heappush(pq, 5)
+heapq.heappush(pq, 234)
+print("size:", len(pq))
+while len(pq)>0:
+  print(heapq.heappop(pq))
+
+min-heap
+
