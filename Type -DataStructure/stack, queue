@@ -1,0 +1,36 @@
+스택 stack
+삽입, 삭제 O(1)
+C++에서는 자료형이 구분되나
+python에서는 역시 리스트로 처리함...
+마지막에 넣은 것이 가장 나중에 나오고
+삽입 시 가장 마지막으로 들어가고 삭제를 시도하면 마지막에 넣은 것부터 삭제됨
+head부분이 있어 이 부분에서 삽입, 삭제가 이루어짐
+
+큐 queue
+삽입/삭제 O(1)
+먼저 넣은 것이 먼저 나오고 나중에 넣은 것이 나중에 나옴, 삭제를 시도하면 먼저 넣은 부분부터 삭제됨
+rear로 넣고 front로 출력함
+
+
+스택과 큐도 연결리스트를 이용하여 구현하기도 함...
+
+
+python
+from queue import Queue를 쓰기도 하지만... 느려서
+from collections import deque
+
+Queue는 데이터를 넣고 빼는 부분이 일관적
+
+
+dq = deque()
+양방향으로 넣고 뺄 수 있음
+dobule-ended queue임
+
+dq.append(1)
+dq.append(3)
+dq.appendleft(55)
+dq.appendleft(5555)
+print(dq)
+
+print(dq.pop())
+print(dq.popleft())
