@@ -1,7 +1,3 @@
 Depth First Search : 깊이 우선 탐색
 stack, 재귀를 이용하여 구현
 root 노드를 타고 내려가서 leaf node를 만나고 나면 그 leaf node의 부모 node부분을 찾아 child를 끝까지 찾아가게 됨
-
-adjacent = [[0]*13 for _ in range(13)]
-adjacent[0][1] = adjacent[0][7] = 1
-adjacent[1][2] = adjacent[1][5] = 1
