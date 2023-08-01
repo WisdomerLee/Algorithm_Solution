@@ -1,0 +1,25 @@
+
+그래프 자료 구조
+Graph
+
+VCS, SNS등에서 활용
+
+Vertex 정점(Node)라는 것이 있는데 
+Vertex 들을 잇는 것을 간선edge라고 함
+
+대개 E, V로 표현 함
+
+vertex와 edge로 구성된 자료 구조
+
+그래프의 종류
+edge의 방향성이 없음, edge의 방향성이 있음
+무방향(양방향), 방향 그래프로 나뉨 vertex에서 다른 vertex로 갈 수 있는 방향
+
+순환 그래프 cyclic graph : vertex에서 같은 vertex로 올 수 있는 부분이 있음
+
+비순환 그래프 acyclic graph : vertex에서 같은 vertex로 올 수 있는 부분이 없음
+
+방향성 비순환 그래프DAG directed acyclic graph : 방향성 그래프이면서 비순환 그래프
+
+연결 요소 connected component
+edge로 연결된 vertex들의 묶음
